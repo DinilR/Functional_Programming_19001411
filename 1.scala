@@ -12,6 +12,6 @@ object q1 extends App{
     case a if GCD(n,a)>1=>false
     case a=> prime(n,a+1)
   }
-  println(prime(51))
+  println(prime(7))
 
 }

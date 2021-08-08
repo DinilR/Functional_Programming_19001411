@@ -2,9 +2,9 @@
 //q6
 object q6 extends App{
   //recursive function print fist n Fibonacci numbers for given n.
-    def fibbonacci(n:Int):Int= n match{
+    def fibbonacci(n:Int):Int = n match{
       case 0=>0
-      case n if n==1=>1
+      case x if n==1=>1      //case 1
       case _ => fibbonacci(n-1)+fibbonacci(n-2)
     }
 
