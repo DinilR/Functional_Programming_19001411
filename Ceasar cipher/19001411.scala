@@ -10,7 +10,7 @@ object caesor{
 
     val text_decrypt = cipher(D,text_encrypt,skips,alphabet)
     println("Decrypted text: " + text_decrypt);
-    
+
 
     is_encrypted(string1,text_decrypt);
 
