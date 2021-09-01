@@ -24,9 +24,9 @@ object caesor{
 
   val E = (c:Char, key:Int, a:String) => a((a.indexOf(c.toUpper) + key) % a.size)
 
-  val abs = (num:Int, a:String) => if(num >= 0) num else a.size + num
+  val retIndex = (num:Int, a:String) => if(num >= 0) num else a.size + num
 
-  val D = (c:Char, key:Int, a:String) => a(abs(((a.indexOf(c.toUpper) - key) % a.size), a))
+  val D = (c:Char, key:Int, a:String) => a(retIndex(((a.indexOf(c.toUpper) - key) % a.size), a))
 
   val cipher = (algo:(Char, Int, String) => Char, s:String, key:Int, a:String) => s.map(algo(_, key, a))
 
