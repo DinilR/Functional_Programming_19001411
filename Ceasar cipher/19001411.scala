@@ -12,6 +12,7 @@ object caesor{
     println("Decrypted text: " + text_decrypt);
 
 
+    println();
     is_encrypted(string1,text_decrypt);
 
 
